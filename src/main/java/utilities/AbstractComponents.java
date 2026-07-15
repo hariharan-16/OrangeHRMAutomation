@@ -24,6 +24,10 @@ public class AbstractComponents {
         wait.until(ExpectedConditions.visibilityOfAllElements(elements));
     }
 
+    public void waitForElementToBeClickable(WebElement element){
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
     public void waitForElementInvisibility(WebElement element) {
         wait.until(ExpectedConditions.invisibilityOf(element));
     }

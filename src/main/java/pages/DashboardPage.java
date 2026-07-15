@@ -36,6 +36,9 @@ public class DashboardPage extends AbstractComponents {
     @FindBy(className = "oxd-main-menu")
     private WebElement sideBarMenuLinks;
 
+    @FindBy(linkText = "PIM")
+    private WebElement PIMMenuLink;
+
     //Quick Launch Card elements
     @FindBy(xpath = "//button[@title='Assign Leave']")
     private WebElement assignLeaveButton;
@@ -88,6 +91,11 @@ public class DashboardPage extends AbstractComponents {
                 .filter(WebElement::isDisplayed)
                 .map(WebElement::getText)
                 .toList();
+    }
+
+    public PIMPage goToPIMPage(){
+        PIMMenuLink.click();
+        return new PIMPage(driver);
     }
 
 }

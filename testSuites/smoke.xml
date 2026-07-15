@@ -9,6 +9,7 @@
         </groups>
         <classes>
             <class name="testCases.LoginTest" />
+            <class name="testCases.DashboardTest" />
         </classes>
     </test>
 </suite>
