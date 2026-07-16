@@ -39,6 +39,9 @@ public class DashboardPage extends AbstractComponents {
     @FindBy(linkText = "PIM")
     private WebElement PIMMenuLink;
 
+    @FindBy(linkText = "Admin")
+    private WebElement adminMenuLink;
+
     //Quick Launch Card elements
     @FindBy(xpath = "//button[@title='Assign Leave']")
     private WebElement assignLeaveButton;
@@ -96,6 +99,11 @@ public class DashboardPage extends AbstractComponents {
     public PIMPage goToPIMPage(){
         PIMMenuLink.click();
         return new PIMPage(driver);
+    }
+
+    public AdminPage goToAdminPage(){
+        adminMenuLink.click();
+        return new AdminPage(driver);
     }
 
 }
