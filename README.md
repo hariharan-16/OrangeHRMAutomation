@@ -172,5 +172,5 @@ After execution:
 
 **Hariharan R**
 
-- GitHub: https://github.com/your-username
-- LinkedIn: https://linkedin.com/in/your-profile
+- GitHub: [Github Profile Link](https://github.com/hariharan-16)
+- LinkedIn: [Linked In Profile Link](https://www.linkedin.com/in/hariharan016/)
