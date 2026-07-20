@@ -74,7 +74,7 @@
                         <version>3.2.5</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>testSuites/functional.xml</suiteXmlFile>>
+                                <suiteXmlFile>testSuites/functional.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
