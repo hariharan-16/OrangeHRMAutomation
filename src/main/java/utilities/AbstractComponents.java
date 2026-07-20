@@ -11,9 +11,10 @@ import java.util.List;
 
 public class AbstractComponents {
     WebDriver driver;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    WebDriverWait wait;
     public AbstractComponents(WebDriver driver) {
         this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     public void waitForElementVisibility(WebElement element) {

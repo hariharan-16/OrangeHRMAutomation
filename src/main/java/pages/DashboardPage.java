@@ -45,6 +45,12 @@ public class DashboardPage extends AbstractComponents {
     @FindBy(linkText = "Leave")
     private WebElement leaveMenuLink;
 
+    @FindBy(linkText = "Recruitment")
+    private WebElement recruitmentMenuLink;
+
+    @FindBy(linkText = "My Info")
+    private WebElement myInfoMenuLink;
+
     //Quick Launch Card elements
     @FindBy(xpath = "//button[@title='Assign Leave']")
     private WebElement assignLeaveButton;
@@ -112,6 +118,16 @@ public class DashboardPage extends AbstractComponents {
     public LeavePage goToLeavePage(){
         leaveMenuLink.click();
         return new LeavePage(driver);
+    }
+
+    public RecruitmentPage goToRecruitmentPage(){
+        recruitmentMenuLink.click();
+        return new RecruitmentPage(driver);
+    }
+
+    public MyInfoPage goToMyInfoPage(){
+        myInfoMenuLink.click();
+        return new MyInfoPage(driver);
     }
 
 }

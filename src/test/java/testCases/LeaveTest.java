@@ -10,7 +10,7 @@ public class LeaveTest extends BaseClass {
 
     public DashboardPage dashboardPage;
 
-    @Test
+    @Test(groups = {"functional", "regression"})
     public void applyLeaveTest(){
 
         dashboardPage = landingPage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -19,7 +19,7 @@ public class LeaveTest extends BaseClass {
 
     }
 
-    @Test
+    @Test(groups = {"functional"})
     public void searchLeaveTest(){
 
         dashboardPage = landingPage.login(prop.getProperty("username"), prop.getProperty("password"));
